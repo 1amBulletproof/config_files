@@ -19,7 +19,7 @@
 
 "call SetTimeOfDayColors()
 
-colorscheme darkblue
+colorscheme default
 
 inoremap jk <esc>
 
