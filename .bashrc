@@ -5,7 +5,7 @@
 export PYTHON_3_PATH='/Library/Frameworks/Python.framework/Versions/3.4/bin'
 export GIT_HOME='/usr/local/Cellar/git/2.13/bin'
 export GVIM_PATH='/usr/local/Cellar/macvim/8.0-134/bin'
-export BREW_PATH='/usr/local/Cellar/'
+export BREW_PATH='/usr/local/bin/'
 PATH="~/scripts:$PYTHON_3_PATH:$GIT_HOME:$GVIM_PATH:$BREW_PATH:$PATH"
 export PATH
 
