@@ -1,6 +1,5 @@
 # ~/.bash_profile
 
-# Setting PATH for Python 3.4
 # The orginal version is saved in .bash_profile.pysave
 export BREW_PATH='/usr/local/bin'
 PATH="~/scripts:$BREW_PATH:$PATH"
