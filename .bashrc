@@ -2,8 +2,15 @@
 
 # Setting PATH for Python 3.4
 # The orginal version is saved in .bash_profile.pysave
-PATH="~/scripts:/Library/Frameworks/Python.framework/Versions/3.4/bin:$PATH"
+export PYTHON_3_PATH='/Library/Frameworks/Python.framework/Versions/3.4/bin'
+export GIT_HOME='/usr/local/Cellar/git/2.13/bin'
+export GVIM_PATH='/usr/local/Cellar/macvim/8.0-134/bin'
+export BREW_PATH='/usr/local/Cellar/'
+PATH="~/scripts:$PYTHON_3_PATH:$GIT_HOME:$GVIM_PATH:$BREW_PATH:$PATH"
 export PATH
+
+#Configure system for coursera
+export WEB_URL='http://www.coursera.com'
 
 MYNAME='Brandon Tarney'
 export MYNAME
@@ -23,15 +30,17 @@ alias home='cd ~'
 alias up='cd ..'
 alias h='history'
 alias workDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/Creative\ Projects/Working"
+alias learnDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/Creative\ Projects/Learn"
 alias schoolDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/School/JohnsHopkins"
 alias iCloudDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs"
-alias python3="/usr/local/bin/python3.4"
-alias sshDroplet="ssh root@104.236.202.26"
+alias python3="/usr/local/Cellar/python3/3.6.2/bin/python3"
+alias sshDroplet="ssh -X root@104.236.202.26"
 alias sftpDroplet="sftp root@104.236.202.26"
 alias sshVM="ssh -p 2222 root@127.0.0.1"
 alias scpVM="scp -P 2222"
-alias sshAbsaroka="ssh btarney1@absaroka.jhuep.com"
-alias sshDev4="ssh btarney1@dev4.jhuep.com"
+alias sshAbsaroka="ssh -X btarney1@absaroka.jhuep.com"
+alias sshDev4="ssh -X btarney1@dev4.jhuep.com"
+alias sshWeb6="ssh -X btarney1@web6.jhuep.com"
 
 #redefine/override built-in commands with options predefined
 alias mv='mv -i'
@@ -40,6 +49,8 @@ alias rm='rm -i'
 alias df='df -h'
 alias du='du -h'
 alias mkdir='mkdir -p'
+alias v='vim'
+alias g='gvim'
 
 #proactive typo correction
 alias pdw='pwd'
@@ -85,3 +96,4 @@ function prompt {
 }
 
 prompt
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
