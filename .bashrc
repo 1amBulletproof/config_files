@@ -2,11 +2,10 @@
 
 # Setting PATH for Python 3.4
 # The orginal version is saved in .bash_profile.pysave
-export PYTHON_3_PATH='/Library/Frameworks/Python.framework/Versions/3.4/bin'
 export GIT_HOME='/usr/local/Cellar/git/2.13/bin'
 export GVIM_PATH='/usr/local/Cellar/macvim/8.0-134/bin'
 export BREW_PATH='/usr/local/bin/'
-PATH="~/scripts:$PYTHON_3_PATH:$GIT_HOME:$GVIM_PATH:$BREW_PATH:$PATH"
+PATH="~/scripts:$GIT_HOME:$GVIM_PATH:$BREW_PATH:$PATH"
 export PATH
 
 #Configure system for coursera
@@ -33,7 +32,6 @@ alias workDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/Cr
 alias learnDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/Creative\ Projects/Learn"
 alias schoolDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/School/JohnsHopkins"
 alias iCloudDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs"
-alias python3="/usr/local/Cellar/python3/3.6.2/bin/python3"
 alias sshDroplet="ssh -X root@104.236.202.26"
 alias sftpDroplet="sftp root@104.236.202.26"
 alias sshVM="ssh -p 2222 root@127.0.0.1"
