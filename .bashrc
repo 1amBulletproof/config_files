@@ -2,10 +2,8 @@
 
 # Setting PATH for Python 3.4
 # The orginal version is saved in .bash_profile.pysave
-export GIT_HOME='/usr/local/Cellar/git/2.13/bin'
-export GVIM_PATH='/usr/local/Cellar/macvim/8.0-134/bin'
-export BREW_PATH='/usr/local/bin/'
-PATH="~/scripts:$GIT_HOME:$GVIM_PATH:$BREW_PATH:$PATH"
+export BREW_PATH='/usr/local/bin'
+PATH="~/scripts:$BREW_PATH:$PATH"
 export PATH
 
 #Configure system for coursera
