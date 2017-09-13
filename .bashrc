@@ -45,7 +45,9 @@ alias df='df -h'
 alias du='du -h'
 alias mkdir='mkdir -p'
 alias v='vim'
+alias vd='vimdiff'
 alias g='~/scripts/go'
+alias gd='gvimdiff'
 
 #proactive typo correction
 alias pdw='pwd'
