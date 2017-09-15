@@ -33,6 +33,8 @@ set softtabstop=4			" number of visual spaces per TAB when editing
 
 set expandtab				" tabs are spaces: makes tabs a shortcut for inserting 4 spaces
 
+set shiftwidth=4            " size of an "indent" it's also measured in spaces
+
 " UI Config
 set number				" show line numbers
 
