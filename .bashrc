@@ -17,6 +17,7 @@ export HISTTIMEFORMAT='%b %d %I:%M %p '               # using strftime format
 export HISTCONTROL=ignoreboth                         # ignoredups:ignorespace
 export HISTIGNORE="history:pwd:exit:df:ls:ls -la:ll:la:lt"
 
+alias l="ls"
 alias ll="ls -l"
 alias la="ls -a"
 alias lt="ls -ltr"
