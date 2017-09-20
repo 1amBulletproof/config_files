@@ -48,6 +48,7 @@ alias mkdir='mkdir -p'
 alias v='vim'
 alias vd='vimdiff'
 alias g='~/scripts/go'
+alias gv='gvim'
 alias gd='gvimdiff'
 alias getMyIp='curl ifconfig.me'
 
