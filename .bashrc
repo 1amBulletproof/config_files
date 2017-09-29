@@ -42,6 +42,7 @@ alias sshWeb6="ssh -X btarney1@web6.jhuep.com"
 alias mv='mv -i'
 alias cp='cp -i'
 alias rm='rm -i'
+alias ..='cd ..'
 alias df='df -h'
 alias du='du -h'
 alias mkdir='mkdir -p'
