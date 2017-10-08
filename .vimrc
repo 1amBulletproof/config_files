@@ -53,7 +53,7 @@ set showmatch				" highlight mathing [{()}]
 set ruler				" display the cursor position on the last line of the screen or in the status line 
 
 " Searching
-set ignorecase				" ignore case when searching
+"set ignorecase				" ignore case when searching
 
 set incsearch				" search as characters are entered
 
