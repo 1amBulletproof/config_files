@@ -24,6 +24,8 @@ colorscheme default
 inoremap jk <esc>
 inoremap kj <esc>
 inoremap jj <esc>
+inoremap df <esc>
+inoremap fd <esc>
 
 syntax enable				" enable syntaxt processing
 
