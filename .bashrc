@@ -17,48 +17,6 @@ export HISTTIMEFORMAT='%b %d %I:%M %p '               # using strftime format
 export HISTCONTROL=ignoreboth                         # ignoredups:ignorespace
 export HISTIGNORE="history:pwd:exit:df:ls:ls -la:ll:la:lt"
 
-alias l="ls"
-alias ll="ls -l"
-alias la="ls -a"
-alias lt="ls -ltr"
-alias lart="ls -lart"
-alias hello='echo "Hello World!"'
-alias home='cd ~'
-alias up='cd ..'
-alias h='history'
-alias workDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/Creative\ Projects/Working"
-alias learnDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/Creative\ Projects/Learn"
-alias schoolDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/School/JohnsHopkins"
-alias iCloudDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs"
-alias sshDroplet="ssh -X root@104.236.202.26"
-alias sftpDroplet="sftp root@104.236.202.26"
-alias sshVM="ssh -p 2222 root@127.0.0.1"
-alias scpVM="scp -P 2222"
-alias sshAbsaroka="ssh -X btarney1@absaroka.jhuep.com"
-alias sshDev4="ssh -X btarney1@dev4.jhuep.com"
-alias sshWeb6="ssh -X btarney1@web6.jhuep.com"
-
-#redefine/override built-in commands with options predefined
-alias mv='mv -i'
-alias cp='cp -i'
-alias rm='rm -i'
-alias ..='cd ..'
-alias df='df -h'
-alias du='du -h'
-alias mkdir='mkdir -p'
-alias v='vim'
-alias vd='vimdiff'
-alias gw='~/scripts/go'
-alias g='gvim'
-alias go='gvim -o'
-alias gO='gvim -O'
-alias gp='gvim -p'
-alias gd='gvimdiff'
-alias getMyIp='curl ifconfig.me'
-
-#proactive typo correction
-alias pdw='pwd'
-
 #GREP_COLOR codes
 #Attributes:   Text Color:   Background:
 #    0 reset all      30 black      40 black
@@ -67,14 +25,11 @@ alias pdw='pwd'
 # ETC....
 #Separate with ";"
 
-
 export GREP_COLOR="34;47"
 export GREP_OPTIONS="--color=auto"
 
-
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-
 
 function prompt {
   local BLACK="\[\033[0;30m\]"
@@ -101,3 +56,4 @@ function prompt {
 
 prompt
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+source ~/.alias
