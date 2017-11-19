@@ -24,9 +24,9 @@ alias findFile="find /* | grep "
 alias getMyIp="curl ifconfig.me"
 
 #Common commands
-alias workDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/Creative\ Projects/Working"
-alias learnDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/Creative\ Projects/Learn"
-alias schoolDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs/School/JohnsHopkins"
+alias workDir="cd /Users/Tarney/Dropbox/Creative\ Projects/Working"
+alias learnDir="cd /Users/Tarney/Dropbox/Creative\ Projects/Learn"
+alias schoolDir="cd /Users/Tarney/Dropbox/School/JohnsHopkins"
 alias iCloudDir="cd /Users/Tarney/Library/Mobile\ Documents/com~apple~CloudDocs"
 alias sshDroplet="ssh -X root@104.236.202.26"
 alias sftpDroplet="sftp root@104.236.202.26"
