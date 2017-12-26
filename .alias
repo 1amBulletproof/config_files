@@ -48,4 +48,5 @@ alias vO="vim -O"
 alias vd="vimdiff"
 alias gd="gvimdiff"
 alias mktags="find /* | ctags -f ~/ctags -L -"
+alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 

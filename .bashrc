@@ -2,7 +2,7 @@
 
 # The orginal version is saved in .bash_profile.pysave
 export BREW_PATH='/usr/local/bin'
-PATH="~/scripts:$BREW_PATH:$PATH"
+PATH="~/bin:$BREW_PATH:$PATH"
 export PATH
 
 #Configure system for coursera
