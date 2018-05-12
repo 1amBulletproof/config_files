@@ -56,8 +56,8 @@ function prompt {
 
 prompt
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 cdf() {
     target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
