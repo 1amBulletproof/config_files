@@ -30,13 +30,13 @@ inoremap fd <esc>
 syntax enable				" enable syntaxt processing
 
 " Whitespace
-set tabstop=4				" number of visual spaces per TAB when reading
+set tabstop=2				" number of visual spaces per TAB when reading
 
-set softtabstop=4			" number of visual spaces per TAB when editing
+set softtabstop=2			" number of visual spaces per TAB when editing
 
-set expandtab				" tabs are spaces: makes tabs a shortcut for inserting spaces
+"set expandtab				" tabs are spaces: makes tabs a shortcut for inserting spaces
 
-set shiftwidth=4            " size of an "indent" it's also measured in spaces
+set shiftwidth=2            " size of an "indent" it's also measured in spaces
 
 " UI Config
 set number				" show line numbers
