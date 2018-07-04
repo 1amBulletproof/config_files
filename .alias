@@ -16,6 +16,7 @@ alias ....="cd ../../.."
 alias cdi="cd ../../include/`pwd | rev | cut -f1 -d"/" | rev`"
 alias cdl="cd ../../lib/`pwd | rev | cut -f1 -d"/" | rev`"
 alias psp="ps -ef | grep "
+alias src="source ~/.bashrc"
 alias grep="grep --color=auto"
 alias grp="grep ./* -i -r -e "
 alias egrep="egrep --color=auto"
@@ -49,4 +50,12 @@ alias vd="vimdiff"
 alias gd="gvimdiff"
 alias mktags="find /* | ctags -f ~/ctags -L -"
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+alias dps='docker ps'
+alias drun='docker run'
+alias dip='docker-machine ip'
+alias dcommit='docker commit'
+alias drm='docker rm'
+alias dkill='docker kill'
+alias dexec='docker exec'
+
 

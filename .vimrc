@@ -1,24 +1,3 @@
-"Advanced Settings
-"set ctags...Need to enable the rest of ctags to use this
-"set tags+=~/${PROJ}_tags
-"
-" Color
-""function SetTimeOfDayColors()
-" progressively check higher values .... falls out on first "true"
-" (note addition of zero ... this guarantees return from function is numeric)
-"let currentHour = strftime("%H")
-"echo "currentHour is " . currentHour
-"if currentHour > 15 + 0
-        "let colorScheme = "darkblue"
-"else
-        "let colorScheme = "desert"
-"endif
-"echo "setting color scheme to " . colorScheme
-"execute "colorscheme " . colorScheme
-"endfunction
-
-"call SetTimeOfDayColors()
-
 colorscheme default
 
 inoremap jk <esc>
@@ -28,6 +7,10 @@ inoremap df <esc>
 inoremap fd <esc>
 
 syntax enable				" enable syntaxt processing
+
+" autocomplete
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Whitespace
 set tabstop=4				" number of visual spaces per TAB when reading
@@ -56,7 +39,9 @@ set showmatch				" highlight mathing [{()}]
 set ruler				" display the cursor position on the last line of the screen or in the status line 
 
 " Searching
-"set ignorecase				" ignore case when searching
+set ignorecase				" ignore case when searching
+
+set smartcase				" search for case based on input search
 
 set incsearch				" search as characters are entered
 

@@ -7,6 +7,7 @@ export PATH
 
 #Configure system for coursera
 export WEB_URL='http://www.coursera.com'
+export dformat='\nID\t{{.ID}}\nIMAGE\t{{.Image}}\nCOMMAND\t{{.Command}}\nCREATED\t{{.RunningFor}}\nStatus\t{{.Status}}\nPORTS\t{{.Ports}}\nNAMES\t{{.Names}}\n'
 
 MYNAME='Brandon Tarney'
 export MYNAME
@@ -67,5 +68,9 @@ cdf() {
         echo 'No Finder window found' >&2
     fi
 }
+
+#Setup docker environment
+eval $(docker-machine env default)
+
 
 source ~/.alias
