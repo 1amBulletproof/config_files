@@ -12,6 +12,8 @@ syntax enable				" enable syntaxt processing
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
+set backspace=indent,eol,start " Vim 8+ will not otherwise backspace while in insert mode beyond where the insert mode started
+
 " Whitespace
 set tabstop=4				" number of visual spaces per TAB when reading
 
@@ -50,7 +52,7 @@ set hlsearch				" highlight matches
 " Folding
 set foldenable				" enable code folding
 
-set fdm=syntax				" folding method is syntax: groups lines of code based on the syntax
+set fdm=indent				" folding method is syntax: groups lines of code based on the syntax
 
 set foldlevelstart=10			" open most folds by default
 
