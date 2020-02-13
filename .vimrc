@@ -29,6 +29,7 @@ set number				" show line numbers
 set showcmd				" show command in the bottom bar
 
 set cursorline				" highlight cursor currently line
+set cursorcolumn				" highlight cursor currently column
 
 filetype indent on			" load filetype-specific indent files, i.e. load python indentation file for *.py
 
