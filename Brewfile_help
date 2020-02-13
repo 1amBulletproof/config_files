@@ -1,0 +1,39 @@
+see https://www.caseyliss.com/2019/10/8/brew-bundle
+
+
+Liss is More
+By Casey Liss
+ABOUT• VIGNETTE• CASEY ON CARS• CONTACT• ELSEWHERE• RSS
+Easy macOS Loads By Way of Homebrew Bundle
+Tuesday, 8 October 2019
+As discussed on recent episodes of ATP, I’ve had some issues with my iMac lately. A trip to the Apple Store and new logic board later, I had functional hardware but no software installed upon it. Finally, I had the opportunity to try out something I’ve been preparing for a long while: my Brewfile.
+
+Much in the spirit of Ruby’s Bundler, Homebrew has Bundle. For both Bundler and Bundle, you provide a file with a list of software/dependencies you want installed, and the apps will install them automatically. In the case of Bundler, it’s all Ruby gems; in the case of Bundle, it’s command line apps, Mac apps, and even fonts.
+
+Last week, I loaded up my iMac from scratch using a Brewfile I had been adding to over the last couple years. Finally getting the opportunity to use it has given me the opportunity to refine it.
+
+These refinements ended up being extremely convenient, as just yesterday I decided to nuke my MacBook and reload it to try to get it operating properly. Thanks to Bundle, that took considerably less time than it would have in years past.
+
+Terminal.app re-running Homebrew Bundle
+All it took was having ~/Brewfile, and then running
+
+brew bundle install
+Give it a bit of time — a lot if you’re installing Xcode — and just like that most/all of your favorite software is installed. All in one easy peasy command line incantation.
+
+I can’t overstate how much time this has saved me. 🥳
+
+Furthermore, as I add new items to my Brewfile, I can feel free to run brew bundle install again. It will automatically skip software that’s already installed. In fact, the screen shot above was me re-running Bundle long after it had worked its magic.
+
+Your Brewfile is unique to you; it’s a distillation of your own particular toolchains and requirements. There are many like it, but this one is mine.
+
+UPDATED 2019-10-09 3:00 PM: Several people have asked “okay, but, how do I create a Brewfile to begin with?”
+
+For me, I went spelunking through /Applications to see what I had and what I knew I couldn’t live without. Generating my Brewfile from scratch was, to no small degree, the point.
+
+If you’d like to take a shortcut to get yourself started, you can do:
+
+brew bundle dump
+
+This will create a Brewfile of everything Bundle recognizes on your existing system. At that point, you can go through and cull what you don’t think you really need.
+
+Copyright © 2014-2019 Limitliss LLC
